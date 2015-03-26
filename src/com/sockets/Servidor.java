@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Servidor {
 
 	public static void main(String[] args) throws IOException {
+		
 		ServerSocket servidor = new ServerSocket(12345);
 		System.out.println("Porta 12345 aberta!");
 		Socket cliente = servidor.accept();
