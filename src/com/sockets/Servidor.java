@@ -8,9 +8,9 @@ public class Servidor {
 
 	public static void main(String[] args) throws IOException {
 		ServerSocket servidor = new ServerSocket(12345);
-		System.out.println("Porta12345aberta!");
+		System.out.println("Porta 12345 aberta!");
 		Socket cliente = servidor.accept();
-		System.out.println("Novaconexãocomocliente"
+		System.out.println("Nova conexão como cliente "
 				+ cliente.getInetAddress().getHostAddress());
 		Scanner s = new Scanner(cliente.getInputStream());
 		while (s.hasNextLine()) {
